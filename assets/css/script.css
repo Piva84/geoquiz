@@ -6,10 +6,25 @@ body {
   background-size: cover; 
     font-family: "EB Garamond", serif;
     font-weight: 500;
+  display: flex;
+  flex-direction: column;
+
+.logo {
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#logo {
+  max-width: 10rem;
+  max-height: 10rem;
+}
 
 h1 {
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
+    font-size: 5rem;
 }
 
 /* Arrange question above alternatives */
@@ -19,10 +34,16 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: auto;
+    height: auto;
+    background-color: rgba(184, 157, 109, 0.5);
   }
   
   #question {
     margin-bottom: 20px;
+    width: auto;
+    height: auto;
+    background-color: rgba(184, 157, 109, 0.5);
   }
 /* Arrange the alternatives */  
   #alternatives-container {
@@ -31,6 +52,9 @@ h1 {
     justify-content: space-around;
     flex-direction: column;
     margin-bottom: 20px;
+    background-color: rgba(214, 143, 10, .5);
+    width: auto;
+    height: auto;
   }
   
   .alternatives-group {
@@ -42,7 +66,30 @@ h1 {
     margin: 5px;
   }
   
-  
+  #alternative-a {
+    width: auto;
+    height: auto;
+    background-color: rgba(214, 143, 10, .5);
+    margin: 5px;
+  }
+  #alternative-b {
+    width: auto;
+    height: auto;
+    background-color: rgba(214, 143, 10, .5);
+    margin: 5px;
+  }
+  #alternative-c {
+    width: auto;
+    height: auto;
+    background-color: rgba(214, 143, 10, .5);
+    margin: 5px;
+  }
+  #alternative-d {
+    width: auto;
+    height: auto;
+    background-color: rgba(214, 143, 10, .5);
+    margin: 5px;
+  }
 
 
 }
