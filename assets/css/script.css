@@ -4,15 +4,16 @@ body {
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover; 
-    font-family: "EB Garamond", serif;
-    font-weight: 500;
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
 .logo {
   align-items: center;
-  flex-direction: row;
+  flex-direction: row; /* Adjusted */
   justify-content: center;
 }
 
@@ -22,91 +23,50 @@ body {
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 5rem;
 }
 
 /* Arrange question above alternatives */
 .questions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: auto;
-    height: auto;
-    background-color: rgba(184, 157, 109, 0.5);
-  }
-  
-  #question {
-    margin-bottom: 20px;
-    width: auto;
-    height: auto;
-    background-color: rgba(184, 157, 109, 0.5);
-    font-size: 2rem;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(184, 157, 109, 0.5);
+  width: auto;
+  height: auto;
+}
+
+#question {
+  margin-bottom: 20px;
+  background-color: rgba(184, 157, 109, 0.5);
+  font-size: 2rem;
+}
+
 /* Arrange the alternatives */  
-  #alternatives-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-bottom: 20px;
-    background-color: rgba(214, 143, 10, .5);
-    width: auto;
-    height: auto;
-    align-items: center;
-    font-size: 1.5rem;
-  }
-  
-  .alternatives-group {
-    display: flex;
-  }
-  
-  .alternatives-group > div {
-    width: auto;
-    margin: 5px;
-  }
-  
-  #alternative-a {
-    width: auto;
-    height: auto;
-    background-color: rgba(214, 143, 10, .5);
-    margin: 5px;
-  }
-  #alternative-b {
-    width: auto;
-    height: auto;
-    background-color: rgba(214, 143, 10, .5);
-    margin: 5px;
-  }
-  #alternative-c {
-    width: auto;
-    height: auto;
-    background-color: rgba(214, 143, 10, .5);
-    margin: 5px;
-  }
-  #alternative-d {
-    width: auto;
-    height: auto;
-    background-color: rgba(214, 143, 10, .5);
-    margin: 5px;
-  }
-  .counters {
-    width: auto;
-    height: auto;
-    background-color: rgba(240, 255, 255, .3);
-    margin: 5px;
-    border: 5px;
-  }
+#alternatives-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: rgba(214, 143, 10, .5);
+  align-items: center;
+  font-size: 1.5rem;
+}
 
-  .buttons {
-    width: auto;
-    height: auto;
-    margin: 5px;
-    border: 5px;
-  }
+.alternatives-group {
+  display: flex;
+}
 
+.alternatives-group > div {
+  margin: 5px; /* Adjusted */
+}
+
+.counters, .buttons {
+  margin: 5px;
+  border: 5px solid black; /* Adjusted */
 }

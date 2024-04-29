@@ -414,3 +414,80 @@ const questions = {
     40: "a"
   };
   
+// JavaScript code to handle Next Question and Quit buttons
+document.addEventListener("DOMContentLoaded", function() {
+  // Initial question index
+  let currentQuestionIndex = 0;
+  let correctAnswersCount = 0;
+
+  // Get references to HTML elements
+  const questionElement = document.getElementById("question");
+  const alternativesElements = document.querySelectorAll(".alternatives-group div");
+  const correctAnswersElement = document.getElementById("correct-count");
+  const questionsLeftElement = document.getElementById("questions-count");
+  const nextQuestionButton = document.getElementById("next-question");
+  const quitButton = document.getElementById("quit");
+
+  // Display initial question
+  displayQuestion();
+
+  // Next Question button click event
+  nextQuestionButton.addEventListener("click", function() {
+      // Increment current question index
+      currentQuestionIndex++;
+
+      // Update counters
+      questionsLeftElement.textContent = 41 - currentQuestionIndex;
+
+      // Display next question
+      displayQuestion();
+
+      // Check if all questions have been answered
+      if (currentQuestionIndex === 41) {
+          // Disable Next Question button
+          nextQuestionButton.disabled = true;
+          // Alert for completion of all questions
+          alert("You have answered all questions.");
+      }
+  });
+
+  // Quit button click event
+  quitButton.addEventListener("click", function() {
+      // Alert for quitting
+      alert("You have quit the quiz.");
+      // Reload the page to start over
+      location.reload();
+  });
+
+  // Add event listeners to alternatives
+  alternativesElements.forEach(element => {
+      element.addEventListener("click", function() {
+          // Get the clicked alternative
+          const clickedAlternative = this.textContent.trim();
+
+          // Check if the clicked alternative is correct
+          const currentQuestion = questions[currentQuestionIndex];
+          const correctAlternative = currentQuestion.correctAlternative;
+          if (clickedAlternative === correctAlternative) {
+              // Increment correct answers count
+              correctAnswersCount++;
+              correctAnswersElement.textContent = correctAnswersCount;
+          }
+      });
+  });
+
+  // Function to display question and alternatives based on current index
+  function displayQuestion() {
+      // Get question and alternatives based on current index
+      const currentQuestion = questions[currentQuestionIndex];
+      const currentAlternatives = Object.values(currentQuestion.alternatives);
+
+      // Display question
+      questionElement.textContent = currentQuestion.question;
+
+      // Display alternatives
+      alternativesElements.forEach((element, index) => {
+          element.textContent = currentAlternatives[index];
+      });
+  }
+});
