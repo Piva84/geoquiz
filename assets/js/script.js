@@ -462,6 +462,12 @@ function updateCounters() {
   document.getElementById('questions-count').textContent = questionsLeft;
 }
 
+// Function to quit and display a popup window
+function quit() {
+  // Display a popup window with the message
+  alert("Thank you for participating!");
+}
+
 // Attach event listeners to alternatives
 document.getElementById('alternative-a').addEventListener('click', function() {
   checkAnswer('a');
