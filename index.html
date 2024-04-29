@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 
+    <!-- css -->
     <link rel="stylesheet" href="assets/css/script.css">
     
     <!-- favicon -->
@@ -17,17 +18,23 @@
     <title>Geoquiz</title>
 </head>
 <body>
-    <h1>Geoquiz</h1>
-    <div>
-        <div>question</div>
-        <div>alternative a</div>
-        <div>alternative b</div>
-        <div>alternative c</div>
-        <div>alternative d</div>
+    <h1><i class="fa-solid fa-book-atlas"></i> Geoquiz</h1>
+    <div class="questions">
+        <div id="question"><i class="fa-solid fa-question"></i><span> Question</span></div>    
+    <div id="alternatives-container">
+        <div class="alternatives-group">
+            <div id="alternative"><i class="fa-solid fa-a"></i><span> Alternative</span></div>
+            <div id="alternative"><i class="fa-solid fa-b"></i><span> Alternative</span></div>
+        </div>
+        <div class="alternatives-group">
+            <div id="alternative"><i class="fa-solid fa-c"></i><span> Alternative</span></div>
+            <div id="alternative"><i class="fa-solid fa-d"></i><span> Alternative</span></div>
+        </div>
     </div>
+    
     <div>
-        <div>You have <span>0</span> correct answers</div>
-        <div>You have <span>50</span> questions left</div>
+        <div id="correct-answers">You have <span>0</span> correct answers</div>
+        <div id="questions-left">You have <span>41</span> questions left</div>
     </div>
 <link rel="stylesheet" href="assets/js/script.js">
 </body>
