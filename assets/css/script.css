@@ -1,4 +1,8 @@
 body {
+  background-image: url(../images/pexels-jess-vide-4601715.jpg);
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
     background: burlywood;
     font-family: "EB Garamond", serif;
     font-weight: 500;
