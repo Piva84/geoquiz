@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- fontawsome and google fonts -->
+    <!-- fontawesome and google fonts -->
     <script src="https://kit.fontawesome.com/d7bf0eb90a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,12 +23,12 @@
         <h2 id="question"><i class="fa-solid fa-question"></i><span> Question</span></h2>
         <div id="alternatives-container">
             <div class="alternatives-group">
-                <div id="alternative-a"><i class="fa-solid fa-a"></i><span> Alternative</span></div>
-                <div id="alternative-b"><i class="fa-solid fa-b"></i><span> Alternative</span></div>
+                <div id="alternative-a" onclick="checkAnswer('a')"><i class="fa-solid fa-a"></i><span> Alternative</span></div>
+                <div id="alternative-b" onclick="checkAnswer('b')"><i class="fa-solid fa-b"></i><span> Alternative</span></div>
             </div>
             <div class="alternatives-group">
-                <div id="alternative-c"><i class="fa-solid fa-c"></i><span> Alternative</span></div>
-                <div id="alternative-d"><i class="fa-solid fa-d"></i><span> Alternative</span></div>
+                <div id="alternative-c" onclick="checkAnswer('c')"><i class="fa-solid fa-c"></i><span> Alternative</span></div>
+                <div id="alternative-d" onclick="checkAnswer('d')"><i class="fa-solid fa-d"></i><span> Alternative</span></div>
             </div>
         </div>
     </div>
@@ -39,8 +39,8 @@
     </div>
 
     <div class="buttons">
-        <button id="next-question">Next Question</button>
-        <button id="quit">Quit</button>
+        <button id="next-question" onclick="nextQuestion()">Next Question</button>
+        <button id="quit" onclick="quit()">Quit</button>
     </div>
 
     <script src="assets/js/script.js"></script>

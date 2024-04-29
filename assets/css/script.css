@@ -56,17 +56,42 @@ h1 {
   background-color: rgba(214, 143, 10, .5);
   align-items: center;
   font-size: 1.5rem;
+  padding: 10px; /* Added padding */
+  border-radius: 10px; /* Rounded edges */
 }
 
 .alternatives-group {
   display: flex;
+  justify-content: center; /* Center align the alternatives */
+}
+
+/* Assign different background colors to each alternative option */
+#alternative-a {
+  background-color: rgba(255, 0, 0, 0.8); /* Red */
+}
+
+#alternative-b {
+  background-color: rgba(0, 255, 0, 0.8); /* Green */
+}
+
+#alternative-c {
+  background-color: rgba(0, 0, 255, 0.8); /* Blue */
+}
+
+#alternative-d {
+  background-color: rgba(255, 255, 0, 0.8); /* Yellow */
 }
 
 .alternatives-group > div {
   margin: 5px; /* Adjusted */
+  padding: 10px; /* Added padding */
+  border-radius: 8px; /* Rounded edges */
+  background-color: rgba(255, 255, 255, 0.8); /* Light background color */
 }
 
 .counters, .buttons {
-  margin: 5px;
-  border: 5px solid black; /* Adjusted */
+  margin: 5px; /* Adjusted */
+  padding: 10px; /* Added padding */
+  border-radius: 8px; /* Rounded edges */
+  background-color: rgba(255, 255, 255, 0.8); /* Light background color */
 }
