@@ -45,7 +45,7 @@ This section describes the process I went through to deploy the project to a hos
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://piva84.github.io/Ice-hotel/
+The live link can be found here - https://piva84.github.io/geoquiz/
 
 ## Credits
 
