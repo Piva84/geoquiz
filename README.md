@@ -1,4 +1,4 @@
-# ICEHOTEL
+# GEOQUIZ
 
 This is a small quiz page with geographical topic.
 
