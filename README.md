@@ -4,12 +4,17 @@ This is a small quiz page with geographical topic.
 
 ## Features
 
+- This is my idea how it should look like before i started to code
+
+[Idea](https://github.com/Piva84/geoquiz/media_for_README.me/geoquiz.png)
+
 ### Existing features
 
 - __The main page__
 
-- is clean and simple, easy to understand.
-[Main page]
+- Is clean and simple, easy to understand.
+
+[Main page](https://github.com/Piva84/geoquiz/media_for_README.me/main_page_geo.jpg)
 
 ### Features for the future
 
