@@ -1,39 +1,61 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ICEHOTEL
 
-Welcome,
+This is a small quiz page with geographical topic.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+### Existing features
 
-## Codeanywhere Reminders
+- __The main page__
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+- is clean and simple, easy to understand.
+[Main page]
 
-`python3 -m http.server`
+### Features for the future
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- In the future I want to add some more functions, like name input.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Testing
 
-`http_server`
+I have tested all the html-code with the W3C validator to ensure that the code is correct and there are no errors within it.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Validator Testing 
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
+- CSS
+  - 3 small errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css)
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Unfixed Bugs
 
-To log into the Heroku toolbelt CLI:
+- there were no errors that the validators found in the code
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Deployment
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+This section describes the process I went through to deploy the project to a hosting platform, (GitHub) 
 
----
+- The site was deployed to GitHub pages. The steps to deploy I went thru are as follows: 
+  - In the GitHub repository, navigate to the Settings tab
+  - In the navbar to the left click on pages 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-Happy coding!
+The live link can be found here - https://piva84.github.io/Ice-hotel/
+
+## Credits
+
+### Content
+
+- The questions did I generate by AI [chatgpt](https://chat.openai.com/)
+
+- Some of the code I have used are tutorials from "the code institute", even the repository come from there - [theCodeInstitute](http://www.codeinstitute.net)
+
+- I even hade some help from W3schools homepage [w3school](https://www.w3schools.com/)
+
+- The icons I've use comes from [Font Awesome](https://fontawesome.com/)
+
+- The font came from [google fonts](https://fonts.google.com/)
+
+### Media
+
+- The picture I've used came from [Pexels](https://www.pexels.com/).
